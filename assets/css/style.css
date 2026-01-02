@@ -9,8 +9,8 @@
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-    url('https://images.unsplash.com/photo-1515169067865-5387ec356754') center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.815)),
+    url(../img/brooke-lark-W1B2LpQOBxA-unsplash.jpg) center/cover;
 
 }
 
@@ -26,7 +26,7 @@
 }
 
 .category-card:hover {
-  background: linear-gradient(135deg, #9c1d34, #ff85a1);
+  background: linear-gradient(135deg, #2583089a, #1e770c);
   color: white;
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, .15);

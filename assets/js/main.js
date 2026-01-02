@@ -44,7 +44,7 @@ const displayProducts = async () => {
             <div class="card h-100 product-card" data-id="${product.id}">
                 <img src="${product.thumbnail}" class="card-img-top product-img " alt="product-image">
                     <div class="card-body">
-                        <h6 class="card-title fw-semibold text-danger-emphasis">${product.title}</h6>
+                        <h6 class="card-title fw-semibold text-success-emphasis">${product.title}</h6>
                         <p class="fw-bold ">$${product.price}</p>
                     </div>
             </div>
