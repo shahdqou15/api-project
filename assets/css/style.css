@@ -1,7 +1,17 @@
+.main_font {
+  font-family: "Abril Fatface", serif;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-around;
+}
+
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-              url('https://images.unsplash.com/photo-1515169067865-5387ec356754') center/cover;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+    url('https://images.unsplash.com/photo-1515169067865-5387ec356754') center/cover;
+
 }
 
 
@@ -10,23 +20,76 @@
   border-radius: 16px;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   cursor: pointer;
-  transition:all 0.5s;
-  min-height: 120px;
+  transition: all 0.4s;
+  min-height: 110px;
+
 }
 
 .category-card:hover {
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  background: linear-gradient(135deg, #9c1d34, #ff85a1);
   color: white;
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
 }
+
 
 .product-card {
   transition: 0.3s;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+}
+
+
+.my-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  user-select: none;
+}
+
+.modal-content {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.my-modal .card{
+  width: 450px;
+  height: 500px;
+}
+
+
+.close-btn {
+  background-color: rgba(58, 57, 57, 0.486);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+
 }
